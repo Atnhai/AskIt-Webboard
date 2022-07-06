@@ -7,7 +7,7 @@ import { useStateContext } from '../context/state';
 import ErrorMessage from './ErrorMessage';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import SofLogo from '../svg/stack-overflow.svg';
+import SofLogo from '../svg/AskIt.svg';
 import { getErrorMsg } from '../utils/helperFuncs';
 
 import {

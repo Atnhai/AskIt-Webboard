@@ -7,7 +7,7 @@ import UserMenuDesktop from './UserMenuDesktop';
 import SearchBar from './SearchBar';
 import DarkModeSwitch from './DarkModeSwitch';
 import { useAuthContext } from '../context/auth';
-import SofLogo from '../svg/stack-overflow.svg';
+import SofLogo from '../svg/AskIt.svg';
 
 import {
   AppBar,
