@@ -62,7 +62,7 @@ const UserPage = () => {
           to={`/user/${username}`}
         />
         <Typography variant="h5" color="secondary" className={classes.cardText}>
-          {reputation} <Typography variant="caption">REPUTATION</Typography>
+          {reputation} <Typography variant="caption">COINS</Typography>
         </Typography>
       </div>
       <div className={classes.infoCard}>
