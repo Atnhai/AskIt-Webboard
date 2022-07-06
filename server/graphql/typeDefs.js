@@ -52,7 +52,7 @@ module.exports = gql`
     questions: [QuestionRep]!
     answers: [AnswerRep]!
     createdAt: DateTime!
-    reputation: Int!
+    coin: Int!
     recentQuestions: [RecentActivity]!
     recentAnswers: [RecentActivity]!
     totalQuestions: Int!

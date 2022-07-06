@@ -82,7 +82,7 @@ export const GET_USER = gql`
       username
       role
       createdAt
-      reputation
+      coin
       totalQuestions
       totalAnswers
       recentQuestions {
