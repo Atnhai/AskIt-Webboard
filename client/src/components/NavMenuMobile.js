@@ -58,7 +58,7 @@ const MobileNavMenu = () => {
           onClick={handleCloseMenu}
         >
           <PublicIcon className={classes.menuIcon} />
-          Stack Underflow
+          Ask It
         </MenuItem>
         <MenuItem
           selected={pathname.startsWith('/tag')}
@@ -82,18 +82,7 @@ const MobileNavMenu = () => {
         </MenuItem>
         <Divider />
         <div className={classes.madeByItem}>
-          <Typography variant="caption" color="secondary">
-            Made with{' '}
-            <FavoriteIcon style={{ fontSize: 10, color: '#f4649f' }} /> by{' '}
-            <Link
-              href={'https://github.com/amand33p'}
-              color="inherit"
-              target="_blank"
-              rel="noopener"
-            >
-              <strong>{` amand33p`}</strong>
-            </Link>
-          </Typography>
+          
         </div>
       </Menu>
     </div>
