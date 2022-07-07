@@ -4,7 +4,7 @@ Fullstack [Stack Overflow](https://stackoverflow.com/) clone (QnA site) made wit
 
 ## Demo
 
-[Deployed on Netlify (front-end) & Heroku (back-end)](https://stackunderflow.netlify.app)
+
 
 ## Built using
 
@@ -48,23 +48,7 @@ Fullstack [Stack Overflow](https://stackoverflow.com/) clone (QnA site) made wit
 - Dark mode toggle w/ local storage save
 - Proper responsive UI for all screens
 
-## Screenshots
 
-#### Desktop/Tablet
-
-![Desktop-1](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/desktop-1.jpg)
-![Desktop-2](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/desktop-2.jpg)
-![Desktop-3](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/desktop-3.jpg)
-![Desktop-4](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/desktop-4.jpg)
-![Desktop-5](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/desktop-5.jpg)
-
-#### Mobile
-
-![Mobile-1](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/mobile-1.jpg)
-![Mobile-2](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/mobile-2.jpg)
-![Mobile-3](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/mobile-3.jpg)
-![Mobile-4](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/mobile-4.jpg)
-![Mobile-5](https://github.com/amand33p/stack-underflow-mern-gql/blob/master/screenshots/mobile-5.jpg)
 
 ## Usage
 
