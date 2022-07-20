@@ -39,10 +39,10 @@ const answerSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  Accepted: {
-    type: Boolean,
-    default: false,
-  }
+  accepted: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+  },
 });
 
 schemaCleaner(answerSchema);

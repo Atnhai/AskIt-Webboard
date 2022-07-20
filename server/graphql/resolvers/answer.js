@@ -216,23 +216,15 @@ module.exports = {
           !question.acceptedAnswer ||
           !question.acceptedAnswer.equals(targetAnswer._id)
         ) {
-          targetAnswer.Accepted = true;
           question.acceptedAnswer = targetAnswer._id;
+
         } else {
           question.acceptedAnswer = null;
         }
 
+
         const savedQues = await question.save();
-
-        if (targetAnswer.Accepted === true) {
-          const addedRepAuthor = ansCorrectRep(targetAnswer, targetAnswer.author);
-          await addedRepAuthor.save();
-        }
-
-
-
-
-
+  
         const populatedQues = await savedQues
           .populate('answers.author', 'username')
           .populate('answers.comments.author', 'username')

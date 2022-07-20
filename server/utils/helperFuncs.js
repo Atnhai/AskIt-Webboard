@@ -58,6 +58,22 @@ const downvoteIt = (quesAns, user) => {
   return quesAns;
 };
 
+const acceptIt = (quesAns, user) => {
+  if (quesAns.accepted.includes(user._id.toString())) {
+    quesAns.accepted = quesAns.accepted.filter(
+      (u) => u.toString() !== user._id.toString()
+    );
+  } else {
+    quesAns.accepted.push(user._id);
+  }
+
+  quesAns.points = quesAns.accepted.length
+  return quesAns;
+};
+
+
+
+
 const quesRep = (question, author) => {
   const calculatedRep =
     question.upvotedBy.length * 10 - question.downvotedBy.length * 2;
@@ -80,15 +96,6 @@ const ansRep = (answer, author) => {
   return author;
 };
 
-const ansCorrectRep = (answer, author) => {
-  const calculatedRep = 1;
-
-  author.answers = author.answers.map((a) =>
-    a.ansId.equals(answer._id) ? { ansId: a.ansId, rep: calculatedRep } : a
-  );
-
-  return author;
-};
 
 
-module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep, ansCorrectRep};
+module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep, ansCorrectRep, acceptIt};

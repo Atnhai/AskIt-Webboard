@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
     {
       ansId: { type: mongoose.Schema.Types.ObjectId, ref: 'Answer' },
       rep: { type: Number, default: 0 },
+      accepted: { type: Boolean, default: false },
     },
   ],
   createdAt: {
