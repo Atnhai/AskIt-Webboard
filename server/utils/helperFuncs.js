@@ -58,21 +58,6 @@ const downvoteIt = (quesAns, user) => {
   return quesAns;
 };
 
-const acceptIt = (quesAns, user) => {
-  if (quesAns.accepted.includes(user._id.toString())) {
-    quesAns.accepted = quesAns.accepted.filter(
-      (u) => u.toString() !== user._id.toString()
-    );
-  } else {
-    quesAns.accepted.push(user._id);
-  }
-
-  quesAns.points = quesAns.accepted.length
-  return quesAns;
-};
-
-
-
 
 const quesRep = (question, author) => {
   const calculatedRep =
@@ -98,4 +83,4 @@ const ansRep = (answer, author) => {
 
 
 
-module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep, ansCorrectRep, acceptIt};
+module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep};

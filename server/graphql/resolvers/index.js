@@ -26,7 +26,7 @@ module.exports = {
     coin: (parent) => {
       const questionRep = parent.questions.reduce((sum, q) => sum + q.rep, 0);
       const answerRep = parent.answers.reduce((sum, a) => sum + a.rep, 0);
-      return 1 + questionRep + answerRep + acceptRep;
+      return 1 + questionRep + answerRep;
     },
     totalQuestions: (parent) => parent.questions.length,
     totalAnswers: (parent) => parent.answers.length,

@@ -39,10 +39,6 @@ const answerSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  accepted: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-  },
 });
 
 schemaCleaner(answerSchema);
