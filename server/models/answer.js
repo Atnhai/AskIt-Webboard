@@ -39,6 +39,10 @@ const answerSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  Accepted: {
+    type: Boolean,
+    default: false,
+  }
 });
 
 schemaCleaner(answerSchema);

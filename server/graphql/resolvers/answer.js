@@ -3,7 +3,7 @@ const Question = require('../../models/question');
 const User = require('../../models/user');
 const authChecker = require('../../utils/authChecker');
 const errorHandler = require('../../utils/errorHandler');
-const { upvoteIt, downvoteIt, ansRep } = require('../../utils/helperFuncs');
+const { upvoteIt, downvoteIt, ansRep, ansCorrectRep } = require('../../utils/helperFuncs');
 
 module.exports = {
   Mutation: {
@@ -216,16 +216,29 @@ module.exports = {
           !question.acceptedAnswer ||
           !question.acceptedAnswer.equals(targetAnswer._id)
         ) {
+          targetAnswer.Accepted = true;
           question.acceptedAnswer = targetAnswer._id;
         } else {
           question.acceptedAnswer = null;
         }
 
         const savedQues = await question.save();
+
+        if (targetAnswer.Accepted === true) {
+          const addedRepAuthor = ansCorrectRep(targetAnswer, targetAnswer.author);
+          await addedRepAuthor.save();
+        }
+
+
+
+
+
         const populatedQues = await savedQues
           .populate('answers.author', 'username')
           .populate('answers.comments.author', 'username')
           .execPopulate();
+
+
 
         return populatedQues;
       } catch (err) {

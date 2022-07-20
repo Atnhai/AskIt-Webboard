@@ -1,3 +1,5 @@
+const question = require("../models/question");
+
 const paginateResults = (page, limit, docCount) => {
   const startIndex = (page - 1) * limit;
   const endIndex = page * limit;
@@ -70,6 +72,16 @@ const quesRep = (question, author) => {
 const ansRep = (answer, author) => {
   const calculatedRep =
     answer.upvotedBy.length * 10 - answer.downvotedBy.length * 2;
+  
+  author.answers = author.answers.map((a) =>
+    a.ansId.equals(answer._id) ? { ansId: a.ansId, rep: calculatedRep } : a
+  );
+
+  return author;
+};
+
+const ansCorrectRep = (answer, author) => {
+  const calculatedRep = 1;
 
   author.answers = author.answers.map((a) =>
     a.ansId.equals(answer._id) ? { ansId: a.ansId, rep: calculatedRep } : a
@@ -78,4 +90,5 @@ const ansRep = (answer, author) => {
   return author;
 };
 
-module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep };
+
+module.exports = { paginateResults, upvoteIt, downvoteIt, quesRep, ansRep, ansCorrectRep};
