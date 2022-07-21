@@ -22,9 +22,8 @@ const CoinsPage = () => {
   const classes = useTagsPageStyles();
 
   const data2 = [
-    { name: "Anom", age: 19, gender: "Male" },
-    { name: "Megha", age: 19, gender: "Female" },
-    { name: "Subham", age: 25, gender: "Male"},
+    { name: "1 upvote", coin: 10},
+    { name: "1 downvote", coin: -2},
   ]
 
   return (
@@ -39,16 +38,14 @@ const CoinsPage = () => {
       </Typography>
       <table>
         <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
+          <th>Action</th>
+          <th>Coin</th>
         </tr>
         {data2.map((val, key) => {
           return (
             <tr key={key}>
               <td>{val.name}</td>
-              <td>{val.age}</td>
-              <td>{val.gender}</td>
+              <td>{val.coin}</td>
             </tr>
           )
         })}
