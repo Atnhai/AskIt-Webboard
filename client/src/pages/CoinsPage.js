@@ -1,25 +1,14 @@
-import { useState } from 'react';
-import { useQuery } from '@apollo/client';
-import { GET_ALL_TAGS } from '../graphql/queries';
-import { Link as RouterLink } from 'react-router-dom';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { useStateContext } from '../context/state';
-import { getErrorMsg } from '../utils/helperFuncs';
 import { Typography, Chip, TextField, InputAdornment } from '@material-ui/core';
+<<<<<<< HEAD
+import { useCoinsPageStyles } from '../styles/muiStyles';
+=======
 import { useTagsPageStyles } from '../styles/muiStyles';
 import SearchIcon from '@material-ui/icons/Search';
 import './coin.css';
+>>>>>>> 9ff32a6d5ef275b7d3dccaca7c2f41f14c08e3c6
 
 const CoinsPage = () => {
-  const { notify } = useStateContext();
-  const { data, loading } = useQuery(GET_ALL_TAGS, {
-    onError: (err) => {
-      notify(getErrorMsg(err), 'error');
-    },
-  });
-
-  const [filterInput, setFilterInput] = useState('');
-  const classes = useTagsPageStyles();
+  const classes = useCoinsPageStyles();
 
   const data2 = [
     { name: "1 upvote", coin: 10},
