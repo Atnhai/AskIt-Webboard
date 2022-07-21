@@ -7,6 +7,7 @@ import { useStateContext } from '../context/state';
 import { getErrorMsg } from '../utils/helperFuncs';
 import { Typography, Chip, TextField, InputAdornment } from '@material-ui/core';
 import { useTagsPageStyles } from '../styles/muiStyles';
+import { useCoinsPageStyles } from '../styles/muiStyles';
 import SearchIcon from '@material-ui/icons/Search';
 import './coin.css';
 
