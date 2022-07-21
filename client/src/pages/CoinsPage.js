@@ -1,11 +1,7 @@
 import { Typography, Chip, TextField, InputAdornment } from '@material-ui/core';
-<<<<<<< HEAD
 import { useCoinsPageStyles } from '../styles/muiStyles';
-=======
-import { useTagsPageStyles } from '../styles/muiStyles';
 import SearchIcon from '@material-ui/icons/Search';
 import './coin.css';
->>>>>>> 9ff32a6d5ef275b7d3dccaca7c2f41f14c08e3c6
 
 const CoinsPage = () => {
   const classes = useCoinsPageStyles();
