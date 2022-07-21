@@ -21,7 +21,7 @@ const CoinsPage = () => {
         Good performances means asking and answering useful questions. The coins are determined by how many people upvote on your post. This is a chart of how coins
         are calculated and how much you can convert into money.
       </Typography>
-      <table>
+      <table className={classes.table}>
         <tr>
           <th>Action</th>
           <th>Coin</th>
