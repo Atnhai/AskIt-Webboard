@@ -36,6 +36,7 @@ const CoinsPage = () => {
         Coins is the main currency of our platform. When you have a good performance on AskIt, you will earn coins and be able to convert them to real money.
         Good performances means asking and answering useful questions. The coins are determined by how many people upvote on your post. This is a chart of how coins
         are calculated and how much you can convert into money.
+        * 1 coin = 1 Baht
       </Typography>
       <table>
         <tr>
