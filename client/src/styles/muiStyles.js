@@ -366,6 +366,20 @@ export const useTagsPageStyles = makeStyles(
   { index: 1 }
 );
 
+export const useCoinsPageStyles = makeStyles(
+  (theme) => ({
+    root: {
+      marginTop: '1em',
+      padding: '0.4em 0.7em',
+      width: '100%',
+    },
+    titleText: {
+      marginBottom: '0.9em',
+    },
+  }),
+  { index: 1 }
+);
+
 export const useUsersPageStyles = makeStyles(
   (theme) => ({
     root: {

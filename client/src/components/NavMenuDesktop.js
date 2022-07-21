@@ -23,7 +23,7 @@ const DesktopNavMenu = () => {
           <MenuItem
             selected={
               pathname === '/' ||
-              (!pathname.startsWith('/tag') && !pathname.startsWith('/user'))
+              (!pathname.startsWith('/tag') && !pathname.startsWith('/user') && !pathname.startsWith('/coin'))
             }
             component={RouterLink}
             to="/"
@@ -48,7 +48,7 @@ const DesktopNavMenu = () => {
             Users
           </MenuItem>
           <MenuItem
-            selected={pathname.startsWith('/coins')}
+            selected={pathname.startsWith('/coin')}
             component={RouterLink}
             to="/coins"
           >
