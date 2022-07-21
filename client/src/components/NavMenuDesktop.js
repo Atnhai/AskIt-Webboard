@@ -6,6 +6,7 @@ import { useTheme } from '@material-ui/core/styles';
 import PublicIcon from '@material-ui/icons/Public';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import PeopleIcon from '@material-ui/icons/People';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 
 const DesktopNavMenu = () => {
   const { pathname } = useLocation();
@@ -45,6 +46,14 @@ const DesktopNavMenu = () => {
           >
             <PeopleIcon className={classes.menuIcon} />
             Users
+          </MenuItem>
+          <MenuItem
+            selected={pathname.startsWith('/coins')}
+            component={RouterLink}
+            to="/coins"
+          >
+            <MonetizationOnIcon className={classes.menuIcon} />
+            Coins
           </MenuItem>
         </div>
         <Divider orientation="vertical" flexItem />

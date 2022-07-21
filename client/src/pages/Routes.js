@@ -4,6 +4,7 @@ import RightSidePanel from '../components/RightSidePanel';
 import QuesListPage from './QuesListPage';
 import AllTagsPage from './AllTagsPage';
 import AllUsersPage from './AllUsersPage';
+import CoinsPage from './CoinsPage';
 import QuestionPage from './QuestionPage';
 import AskQuestionPage from './AskQuestionPage';
 import UserPage from './UserPage';
@@ -42,6 +43,10 @@ const Routes = () => {
           <Route exact path="/users">
             <NavMenuDesktop />
             <AllUsersPage />
+          </Route>
+          <Route exact path="/coins">
+            <NavMenuDesktop />
+            <CoinsPage />
           </Route>
           <Route exact path="/user/:username">
             <NavMenuDesktop />
