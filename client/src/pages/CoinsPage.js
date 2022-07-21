@@ -38,7 +38,7 @@ const CoinsPage = () => {
         are calculated and how much you can convert into money.
         * 1 coin = 1 Baht
       </Typography>
-      <table>
+      <table className={classes.table}>
         <tr>
           <th>Action</th>
           <th>Coin</th>

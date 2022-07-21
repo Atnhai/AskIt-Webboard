@@ -376,6 +376,9 @@ export const useCoinsPageStyles = makeStyles(
     titleText: {
       marginBottom: '0.9em',
     },
+    table: {
+      marginTop: '1em',
+    },
   }),
   { index: 1 }
 );
