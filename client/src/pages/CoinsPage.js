@@ -5,7 +5,6 @@ import { Link as RouterLink } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { useStateContext } from '../context/state';
 import { getErrorMsg } from '../utils/helperFuncs';
-import { useTable } from 'react-table';
 import { Typography, Chip, TextField, InputAdornment } from '@material-ui/core';
 import { useTagsPageStyles } from '../styles/muiStyles';
 import SearchIcon from '@material-ui/icons/Search';
