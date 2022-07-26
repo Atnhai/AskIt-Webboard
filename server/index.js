@@ -3,7 +3,6 @@ const connectToDB = require('./db');
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
 const { PORT } = require('./utils/config');
-
 connectToDB();
 
 const server = new ApolloServer({

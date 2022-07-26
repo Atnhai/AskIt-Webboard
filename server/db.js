@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 const { MONGODB_URI: url } = require('./utils/config');
 

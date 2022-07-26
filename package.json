@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "dotenv": "^16.0.1",
     "nodemon": "^2.0.19",
-    "react-table": "^7.8.0"
+    "react-table": "^7.8.0",
+    "uuid": "^8.3.2"
   }
 }
