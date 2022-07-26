@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nodemon": "^2.0.19",
     "react-table": "^7.8.0"
   }
 }
