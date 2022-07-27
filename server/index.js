@@ -15,7 +15,3 @@ const server = new ApolloServer({
 server.listen({ port: PORT }).then(({ url }) => {
   console.log(`Server ready at ${url}`);
 });
-
-// server.listen(process.env.PORT || 3000 , () => {
-  // console.log("You are connected!");
-// });

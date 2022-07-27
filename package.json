@@ -5,5 +5,9 @@
     "nodemon": "^2.0.19",
     "react-table": "^7.8.0",
     "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
   }
 }
